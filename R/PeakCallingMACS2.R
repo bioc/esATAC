@@ -125,12 +125,14 @@ setMethod(
 #' background directory default: NULL (none)
 #' @param outputPrefix \code{Character} scalar.
 #' the output bed file path
-#' @param threshold \code{Numeric} scalar.
+#' @param pvalueThreshold \code{Numeric} scalar.
 #' threshold (standard deviations) default: NULL (4.0)
 #' @param extsize \code{Logical} scalar.
 #' verbose output if TRUE.
 #' @param shift \code{Character} scalar.
 #' wg threshold set default: NULL (calculated)
+#' @param genomeSize \code{Numeric} scalar.
+#' the size of genome
 #' @param ... Additional arguments, currently unused.
 #' @details The parameter related to input and output file path
 #' will be automatically

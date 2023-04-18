@@ -68,7 +68,10 @@ wg threshold set default: NULL (calculated)}
 
 \item{...}{Additional arguments, currently unused.}
 
-\item{threshold}{\code{Numeric} scalar.
+\item{genomeSize}{\code{Numeric} scalar.
+the size of genome}
+
+\item{pvalueThreshold}{\code{Numeric} scalar.
 threshold (standard deviations) default: NULL (4.0)}
 }
 \value{
