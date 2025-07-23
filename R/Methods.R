@@ -742,14 +742,14 @@ atacRepsPipe <- function(genome, fastqInput1, fastqInput2 = NULL, refdir = NULL,
 
 }
 
-#' @importFrom GenomeInfoDb seqlengths
+#' @importFrom Seqinfo seqlengths
 #' @importFrom rtracklayer import.bed
 
 getBinsReadsCount <- function(bedInput,bsgenome,binsize = 1000){
     abedfile <- import.bed(con = bedInput)
     chrominfo<-seqinfo(bsgenome)
     chroms <- seqnames(chrominfo)
-    chromsize <- GenomeInfoDb::seqlengths(chrominfo)
+    chromsize <- Seqinfo::seqlengths(chrominfo)
     binnumb <- as.integer(chromsize/binsize)+1
     readsCountsList <- list()
     pos<-as.integer((end(ranges(abedfile))+start(ranges(abedfile)))/2/binsize) + 1

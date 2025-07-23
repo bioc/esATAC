@@ -75,7 +75,7 @@ setMethod(
 
 
 #' @importFrom Rsamtools testPairedEndBam scanBam ScanBamParam
-#' @importFrom GenomeInfoDb seqnames seqlengths
+#' @importFrom Seqinfo seqnames seqlengths
 #' @importFrom IRanges IRanges
 #' @importFrom GenomicAlignments readGAlignmentPairs readGAlignmentPairs
 #' @importFrom rtracklayer import export import.bed export.bed
