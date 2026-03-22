@@ -44,7 +44,6 @@
 #' @importFrom Seqinfo seqnames
 #' @importFrom AnnotationDbi saveDb
 #' @importFrom AnnotationDbi loadDb
-#' @importFrom GenomicFeatures makeTxDbFromUCSC
 #' @importFrom R.utils isGzipped
 #' @importFrom R.utils gunzip
 #' @importFrom R.utils isBzipped
